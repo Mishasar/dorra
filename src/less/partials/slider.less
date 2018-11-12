@@ -1,0 +1,46 @@
+@import "../common/vars";
+
+.slider {
+  position: relative;
+  height: 300px;
+
+  .slide {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .3s ease;
+
+    &.show {
+      z-index: 2;
+      opacity: 1;
+    }
+  }
+
+  .control {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    background: @violet;
+
+    a {
+      text-decoration: none;
+      margin-left: 10px;
+      margin-right: 10px;
+      color: #fff;
+    }
+
+    .point {
+      width: 10px;
+      position: relative;
+      display: block;
+
+      &:after {
+        background: #fff;
+        .size(5px);
+        .pseudo;
+      }
+    }
+  }
+}
