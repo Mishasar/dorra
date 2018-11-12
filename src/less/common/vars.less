@@ -1,6 +1,9 @@
-@violet: #8F04A8;
-@light-violet: #BC38D3;
+@dark-green: #47d2b7;
+@light-green: #90e2d2;
+@violet: #5d0e9f;
+@green: #65d4be;
 
+@imgdir: "/images";
 
 .pseudo {
   content: "";
@@ -12,4 +15,35 @@
 .size(@w, @h:@w) {
   width: @w;
   height: @h;
+}
+
+
+// Mode: Mobile
+@tablet: ~"(max-width: 480px)";
+@tablet-area: 480px;
+
+// Mode: Tablet
+@tablet: ~"(max-width: 768px)";
+@tablet-area: 750px;
+
+// Mode: Desktop
+@desktop: ~"(max-width: 1024px)";
+@desktop-area: 970px;
+
+// Area site
+.area {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media @tablet {
+  .area {
+    width: @tablet-area;
+  }
+}
+
+@media @desktop {
+  .area {
+    width: @desktop-area;
+  }
 }

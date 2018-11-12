@@ -4,102 +4,184 @@
   left: 12px;
   top: 6px;
 }
-.slider {
-  position: relative;
-  height: 300px;
-}
-.slider .slide {
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.slider .slide.show {
-  z-index: 2;
-  opacity: 1;
-}
-.slider .control {
-  width: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  bottom: 0;
-  background: #8F04A8;
-}
-.slider .control a {
-  text-decoration: none;
-  margin-left: 10px;
-  margin-right: 10px;
-  color: #fff;
-}
-.slider .control .point {
-  width: 10px;
-  position: relative;
-  display: block;
-}
-.slider .control .point:after {
-  background: #fff;
-  width: 5px;
-  height: 5px;
-  content: "";
-  position: absolute;
-  left: 12px;
-  top: 6px;
-}
-nav {
-  z-index: 10;
-}
-nav a {
-  color: #fff;
-  background: #8F04A8;
-  padding: 10px;
-  width: 100%;
-  text-decoration: none;
-}
-nav li {
-  list-style-type: none;
-  height: 40px;
-  display: flex;
-  flex: 1 1 0;
-  transition: opacity 0.3s ease;
-}
-nav li:hover {
-  opacity: 0.8;
-}
-nav li:active {
-  opacity: 0.6;
-}
-nav ul {
-  padding: 0;
-  margin: 0;
-}
-nav .top {
-  display: flex;
-}
-nav .top > li {
-  text-align: center;
-  position: relative;
-}
-nav .sub {
-  top: 37px;
-  position: absolute;
-  display: none;
-  width: 100%;
-}
-nav .sub li {
-  text-align: left !important;
-  background: #BC38D3;
-}
-li:hover + ul.sub,
-a:hover + ul.sub,
-ul.sub:hover {
-  display: block;
-}
-.content {
+.area {
   margin-left: auto;
   margin-right: auto;
-  width: 768px;
+}
+@media (max-width: 768px) {
+  .area {
+    width: 750px;
+  }
+}
+@media (max-width: 1024px) {
+  .area {
+    width: 970px;
+  }
+}
+.seo-block {
+  width: 550px;
+  margin: auto;
+}
+.seo-block .seo-title {
+  margin-top: 0;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 52px;
+}
+.seo-block .seo-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.seo-block.centred {
+  text-align: center;
+}
+.catalog {
+  display: flex;
+}
+.catalog .item-card {
+  overflow: hidden;
+  width: 25%;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  padding: 10px 25px 22px;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+}
+.catalog .item-card .pic {
+  display: block;
+  height: 178px;
+  margin: 0 0 5px;
+}
+.catalog .item-card h3 {
+  overflow: hidden;
+  color: #282828;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0 0 11px;
+}
+.catalog .item-card h3 a {
+  text-decoration: none;
+  color: #282828;
+}
+.catalog .item-card .code {
+  display: none;
+  color: #868686;
+  font-size: 12px;
+  line-height: 16px;
+}
+.catalog .item-card a.button {
+  display: none;
+  margin: 6px 0 4px;
+}
+.catalog .item-card .item-card button,
+.catalog .item-card a.button {
+  color: #28302e;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'Museo', serif;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 9px 25px;
+  margin: 16px auto 0;
+  background: #90e2d2;
+}
+.content-dorra {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .content-dorra {
+    width: 100%;
+  }
+}
+.wrap-dorra section {
+  padding-top: 70px;
+}
+.wrap-dorra .link {
+  text-decoration: none;
+  position: relative;
+  padding-left: 25px;
+  transition: opacity 0.15s ease-in;
+  display: block;
+}
+.wrap-dorra .link .text {
+  width: 145px;
+  height: 22px;
+  text-align: center;
+  color: #90e2d2;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.wrap-dorra .link:after {
+  width: 22px;
+  height: 22px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  background: url("/images/link2.png") no-repeat;
+  background-size: cover;
+}
+.wrap-dorra .link:hover {
+  opacity: 0.8;
+}
+.wrap-dorra .start .header {
+  background-size: cover;
+  background: url("/images/start.jpg") no-repeat;
+  height: 800px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+}
+.wrap-dorra .start .header .brand-info {
+  height: 200px;
+}
+.wrap-dorra .start .footer {
+  display: flex;
+  flex-direction: column;
+}
+.wrap-dorra .start .footer .brand-info {
+  height: 140px;
+}
+.wrap-dorra .start .brand-info {
+  background-color: #232323;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.wrap-dorra .start .brand-info .logo {
+  background-size: cover;
+  background: url("/images/logo_dorra-white.png") no-repeat;
+  width: 467px;
+  height: 48px;
+  margin-top: 65px;
+}
+.wrap-dorra .start .brand-info .sub-text {
+  margin-top: 30px;
+  width: 275px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.wrap-dorra .start .brand-info .link {
+  margin-top: 21px;
+}
+.wrap-dorra .main-task {
+  padding-top: 70px;
+}
+.wrap-dorra .elements-of-design {
+  height: 830px;
+  background: #47d2b7 radial-gradient(circle 614px at center, rgba(1, 165, 132, 0.11) 0%, rgba(1, 165, 132, 0) 100%);
 }
 
