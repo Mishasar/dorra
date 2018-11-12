@@ -1,2 +1,2 @@
-import './js/page/index';
+// import './js/page/index';
 import './less/style.less';
