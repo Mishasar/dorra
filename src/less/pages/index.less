@@ -39,6 +39,8 @@
   }
 
   .start {
+    padding-top: 0;
+
     .header {
       background-size: cover;
       background: url("@{imgdir}/start.jpg") no-repeat;
@@ -99,6 +101,105 @@
   .elements-of-design {
     height: 830px;
     background: @dark-green radial-gradient(circle 614px at center, rgba(1, 165, 132, 0.11) 0%, rgba(1, 165, 132, 0) 100%);
+
+    .subscribe {
+      margin-top: 35px;
+    }
+  }
+
+  .main-page {
+    height: 644px;
+    background: @violet radial-gradient(circle 477px at center, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 100%);
+    box-sizing: content-box;
+
+    .content-dorra {
+      position: relative;
+      height: 100%;
+
+      .image {
+        .pseudo;
+        .size(100%);
+        z-index: 1;
+        width: 1097px;
+        height: 594px;
+        left: -177px;
+        bottom: -13px;
+      }
+    }
+
+    .seo-block {
+      padding-top: 136px;
+      color: #fff;
+      z-index: 2;
+      margin-left: auto;
+      position: relative;
+      margin-right: 0;
+    }
+
+    .dorra-btn {
+      display: inline-block;
+      color: #28302e;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 300;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding: 16px 29px 14px;
+      margin: 0 0 20px;
+      background: #90e2d2;
+      -webkit-box-shadow: 0 9px 14px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 9px 14px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  .inner-pages {
+    position: relative;
+    background-color: #f5f5f5;
+
+    .site-pages {
+    }
+
+    .seo-block {
+      margin-left: 0;
+      height: 50px;
+    }
+  }
+
+  .product-page {
+    height: 2408px;
+
+    .advantage {
+      width: 1400px;
+      display: flex;
+
+      .advantage-text {
+        width: 300px;
+        position: relative;
+
+        .adv-wrap {
+          position: absolute;
+
+          .adv-title {
+            color: #000000;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 52px;
+            border-bottom: 1px solid #dddddd;
+          }
+
+          .adv-text {
+            color: #767676;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 22px;
+          }
+        }
+      }
+
+      .advantage-text-page-full {
+
+      }
+    }
 
   }
 
