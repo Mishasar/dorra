@@ -411,16 +411,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 .wrap-dorra .final .thanks-and-links {
   width: 840px;
   height: 340px;
   margin: 0;
   background-color: #232323;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .wrap-dorra .final .thanks-and-links .thanks {
+  margin-top: 66px;
   font-size: 45px;
   font-weight: 400;
   line-height: 27px;
+}
+.wrap-dorra .final .thanks-and-links .link {
+  margin-top: 42px;
+}
+.wrap-dorra .final .thanks-and-links .delimiter {
+  margin-top: 35px;
+}
+.wrap-dorra .final .thanks-and-links .letsrock {
+  margin-top: 35px;
+}
+.wrap-dorra .final .thanks-and-links .letsrock .logo {
+  background-size: cover;
+  background: url("/images/letstock.png") no-repeat;
+  width: 160px;
+  height: 35px;
+  opacity: 0.6;
 }
 

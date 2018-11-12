@@ -256,16 +256,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
 
     .thanks-and-links{
       .size(840px,340px);
       margin: 0;
       background-color: #232323;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       .thanks{
+        margin-top: 66px;
         font-size: 45px;
         font-weight: 400;
         line-height: 27px;
+      }
+
+      .link {
+        margin-top: 42px;
+      }
+
+      .delimiter {
+        margin-top: 35px;
+      }
+
+      .letsrock {
+        margin-top: 35px;
+
+        .logo{
+          background-size: cover;
+          background: url("@{imgdir}/letstock.png") no-repeat;
+          .size(160px,35px);
+          opacity: 0.6;
+        }
+
+        .year {
+
+        }
       }
 
     }
