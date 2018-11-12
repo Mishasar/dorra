@@ -21,6 +21,11 @@ module.exports = {
                     'css-loader',
                     'less-loader',
                 ],
+            },
+            {
+                test: /\.(jpg|png|svg)$/,
+                loader: 'file',
+                include: './images'
             }
         ]
     }
