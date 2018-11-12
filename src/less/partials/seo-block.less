@@ -3,6 +3,8 @@
 .seo-block {
   width: 550px;
   margin: auto;
+  z-index: 5;
+  position: relative;
 
   .seo-title {
     margin-top: 0;
@@ -19,5 +21,9 @@
 
   &.centred {
     text-align: center;
+  }
+
+  @media (max-width: 550px) {
+    width: 100%;
   }
 }

@@ -11,14 +11,16 @@
     width: 750px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1170px) {
   .area {
-    width: 970px;
+    width: 1170px;
   }
 }
 .seo-block {
   width: 550px;
   margin: auto;
+  z-index: 5;
+  position: relative;
 }
 .seo-block .seo-title {
   margin-top: 0;
@@ -34,7 +36,17 @@
 .seo-block.centred {
   text-align: center;
 }
+@media (max-width: 550px) {
+  .seo-block {
+    width: 100%;
+  }
+}
 .catalog {
+  overflow: scroll;
+  width: 100%;
+}
+.catalog .catalog-wrap {
+  width: 1170px;
   display: flex;
 }
 .catalog .item-card {
@@ -175,6 +187,7 @@
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
   margin: 10px 0 0;
+  color: #000000;
 }
 .subscribe .subscribe__form .subscribe__agreement .subscribe__agreement--label {
   position: relative;
@@ -191,11 +204,17 @@
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
 }
-@media (max-width: 768px) {
+@media (max-width: 1170px) {
   .content-dorra {
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
+}
+.wrap-dorra {
+  min-width: 320px;
 }
 .wrap-dorra section {
   padding-top: 70px;
@@ -233,15 +252,26 @@
   padding-top: 0;
 }
 .wrap-dorra .start .header {
-  background-size: cover;
   background: url("/images/start.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  .wrap-dorra .start .header {
+    height: 400px;
+  }
+}
 .wrap-dorra .start .header .brand-info {
   height: 200px;
+}
+@media (max-width: 768px) {
+  .wrap-dorra .start .header .brand-info {
+    height: auto;
+  }
 }
 .wrap-dorra .start .footer {
   display: flex;
@@ -258,11 +288,17 @@
   justify-content: flex-start;
 }
 .wrap-dorra .start .brand-info .logo {
-  background-size: cover;
   background: url("/images/logo_dorra-white.png") no-repeat;
+  background-size: contain;
   width: 467px;
   height: 48px;
   margin-top: 65px;
+}
+@media (max-width: 600px) {
+  .wrap-dorra .start .brand-info .logo {
+    width: 234px;
+    height: 24px;
+  }
 }
 .wrap-dorra .start .brand-info .sub-text {
   margin-top: 30px;
@@ -278,6 +314,9 @@
 .wrap-dorra .main-task {
   padding-top: 70px;
 }
+.wrap-dorra .main-task .site img {
+  width: 100%;
+}
 .wrap-dorra .elements-of-design {
   height: 830px;
   background: #47d2b7 radial-gradient(circle 614px at center, rgba(1, 165, 132, 0.11) 0%, rgba(1, 165, 132, 0) 100%);
@@ -290,6 +329,11 @@
   height: 644px;
   background: #5d0e9f radial-gradient(circle 477px at center, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 100%);
   box-sizing: content-box;
+}
+@media (max-width: 1024px) {
+  .wrap-dorra .main-page {
+    text-align: center;
+  }
 }
 .wrap-dorra .main-page .content-dorra {
   position: relative;
@@ -306,6 +350,11 @@
   left: -177px;
   bottom: -13px;
 }
+@media (max-width: 1024px) {
+  .wrap-dorra .main-page .content-dorra .image {
+    display: none;
+  }
+}
 .wrap-dorra .main-page .seo-block {
   padding-top: 136px;
   color: #fff;
@@ -313,6 +362,11 @@
   margin-left: auto;
   position: relative;
   margin-right: 0;
+}
+@media (max-width: 1024px) {
+  .wrap-dorra .main-page .seo-block {
+    margin-right: auto;
+  }
 }
 .wrap-dorra .main-page .dorra-btn {
   display: inline-block;
@@ -332,12 +386,21 @@
   position: relative;
   background-color: #f5f5f5;
 }
+.wrap-dorra .inner-pages .site-pages img {
+  width: 100%;
+}
 .wrap-dorra .inner-pages .seo-block {
   margin-left: 0;
   height: 50px;
 }
+@media (max-width: 1024px) {
+  .wrap-dorra .inner-pages .seo-block {
+    height: auto;
+  }
+}
 .wrap-dorra .product-page {
   height: 2408px;
+  overflow: hidden;
 }
 .wrap-dorra .product-page .advantage {
   width: 1400px;
@@ -374,11 +437,23 @@
 .wrap-dorra .adaptive .content-dorra {
   display: flex;
 }
+@media (max-width: 1024px) {
+  .wrap-dorra .adaptive .content-dorra {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .wrap-dorra .adaptive .content-dorra .annotation {
   display: flex;
   flex-direction: column;
   padding-top: 80px;
   justify-content: flex-start;
+}
+@media (max-width: 1024px) {
+  .wrap-dorra .adaptive .content-dorra .annotation {
+    padding-top: 0;
+    text-align: center;
+  }
 }
 .wrap-dorra .adaptive .content-dorra .annotation .seo-block {
   margin-top: 0;
@@ -389,8 +464,22 @@
   display: flex;
   margin-bottom: auto;
 }
+@media (max-width: 1024px) {
+  .wrap-dorra .adaptive .content-dorra .annotation .icons {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 0;
+    text-align: center;
+  }
+}
 .wrap-dorra .adaptive .content-dorra .annotation .icons .icon-wrap {
-  margin-right: 50px;
+  margin-right: 70px;
+}
+@media (max-width: 1024px) {
+  .wrap-dorra .adaptive .content-dorra .annotation .icons .icon-wrap {
+    margin-right: 0;
+    justify-content: space-around;
+  }
 }
 .wrap-dorra .adaptive .content-dorra .annotation .icons .icon-wrap .icon {
   width: 125px;
@@ -422,6 +511,13 @@
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .wrap-dorra .final .thanks-and-links {
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
 .wrap-dorra .final .thanks-and-links .thanks {
   margin-top: 66px;
   font-size: 45px;
@@ -436,12 +532,28 @@
 }
 .wrap-dorra .final .thanks-and-links .letsrock {
   margin-top: 35px;
+  display: flex;
 }
 .wrap-dorra .final .thanks-and-links .letsrock .logo {
   background-size: cover;
-  background: url("/images/letstock.png") no-repeat;
+  background: url("/images/letsrock.png") no-repeat;
   width: 160px;
   height: 35px;
+  content: "";
+  position: absolute;
   opacity: 0.6;
+  position: relative;
+}
+.wrap-dorra .final .thanks-and-links .letsrock .year {
+  width: 33px;
+  height: 11px;
+  margin-left: 15px;
+  opacity: 0.6;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
 }
 
