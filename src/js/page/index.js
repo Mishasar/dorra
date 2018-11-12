@@ -1,6 +1,5 @@
 import $ from "jquery/dist/jquery";
 import {BasePage} from "../base-page";
-import {Slider} from "../partial/slider";
 import {YandexMaps} from "../partial/yandex-maps";
 
 
