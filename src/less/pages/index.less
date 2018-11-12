@@ -101,6 +101,7 @@
   .elements-of-design {
     height: 830px;
     background: @dark-green radial-gradient(circle 614px at center, rgba(1, 165, 132, 0.11) 0%, rgba(1, 165, 132, 0) 100%);
+    color: #fff;
 
     .subscribe {
       margin-top: 35px;
@@ -197,10 +198,78 @@
       }
 
       .advantage-text-page-full {
-
+        padding-left: 36px;
       }
     }
 
   }
+
+  .adaptive {
+    background-color: @dark-green;
+    background-image: radial-gradient(circle 575px at center, rgba(1, 165, 132, 0.11) 0%, rgba(1, 165, 132, 0) 100%);
+    color: #fff;
+
+    .content-dorra {
+      display: flex;
+
+      .annotation {
+        display: flex;
+        flex-direction: column;
+        padding-top: 80px;
+        justify-content: flex-start;
+
+        .seo-block{
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+
+        .icons {
+          margin-top: 80px;
+          display: flex;
+          margin-bottom: auto;
+
+          .icon-wrap {
+            margin-right: 50px;
+
+            .icon {
+              .size(125px);
+              display: flex;
+              justify-content: center;
+            }
+
+            .icon-title {
+              text-align: center;
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 52px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .final {
+    height: 840px;
+    background-size: cover;
+    background: url("@{imgdir}/dorra-footer.png") no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .thanks-and-links{
+      .size(840px,340px);
+      margin: 0;
+      background-color: #232323;
+
+      .thanks{
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 27px;
+      }
+
+    }
+  }
+
 
 }
