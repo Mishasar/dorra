@@ -119,9 +119,9 @@
   }
 
   .elements-of-design {
-    height: 830px;
     background: @dark-green radial-gradient(circle 614px at center, rgba(1, 165, 132, 0.11) 0%, rgba(1, 165, 132, 0) 100%);
     color: #fff;
+    padding-bottom: 70px;
 
     .subscribe {
       margin-top: 35px;
@@ -217,6 +217,10 @@
         width: 300px;
         position: relative;
 
+        @media (max-width: 550px) {
+          width: 250px;
+        }
+
         .adv-wrap {
           position: absolute;
 
@@ -239,6 +243,10 @@
 
       .advantage-text-page-full {
         padding-left: 36px;
+
+        @media (max-width: 550px) {
+          padding: 0;
+        }
       }
     }
 
@@ -257,6 +265,14 @@
         align-items: center;
       }
 
+      .mobile{
+        @media @mobile {
+          img {
+            width: 100%;
+          }
+        }
+      }
+
       .annotation {
         display: flex;
         flex-direction: column;
@@ -266,6 +282,7 @@
         @media (max-width: 1024px) {
           padding-top: 0;
           text-align: center;
+          width: 100%;
         }
 
         .seo-block {
@@ -283,20 +300,32 @@
             margin-bottom: 40px;
             padding-top: 0;
             text-align: center;
+            justify-content: space-around;
           }
 
           .icon-wrap {
             margin-right: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 
             @media (max-width: 1024px) {
               margin-right: 0;
-              justify-content: space-around;
             }
 
             .icon {
-              .size(125px);
+              width: 125px;
               display: flex;
               justify-content: center;
+
+              @media @mobile {
+                width: auto;
+                margin-right: 10px;
+
+                img {
+                  width: 100%;
+                }
+              }
             }
 
             .icon-title {
@@ -313,12 +342,18 @@
 
   .final {
     height: 840px;
-    background-size: cover;
     background: url("@{imgdir}/dorra-footer.png") no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
+
+    @media @tablet {
+      padding: 0;
+      height: 340px;
+    }
 
     .thanks-and-links {
       .size(840px, 340px);
@@ -329,12 +364,18 @@
       align-items: center;
 
       @media (max-width: 1024px) {
-        width: auto;
+        width: 100%;
         margin-left: 50px;
         margin-right: 50px;
       }
 
+      @media @tablet {
+        height: 100%;
+        margin: 0;
+      }
+
       .thanks {
+        text-align: center;
         margin-top: 66px;
         font-size: 45px;
         font-weight: 400;
@@ -347,6 +388,7 @@
 
       .delimiter {
         margin-top: 35px;
+        width: 100%;
       }
 
       .letsrock {
@@ -354,8 +396,8 @@
         display: flex;
 
         .logo {
-          background-size: cover;
           background: url("@{imgdir}/letsrock.png") no-repeat;
+          background-size: cover;
           .size(160px, 35px);
           .pseudo;
           opacity: 0.6;
